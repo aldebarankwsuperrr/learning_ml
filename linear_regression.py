@@ -32,10 +32,10 @@ def main():
     
     model = linear_regression()
     model.fit(x,y)
+    tes = 11
+    predict = model.predict(tes)
     
-    predict = model.predict(11)
-    
-    print(predict)
+    print("nilai {tes} prediksi nilai adalah {predict}".format(tes = tes, predict = predict[0]))
     
 if __name__ == '__main__':
     main()
